@@ -1,0 +1,641 @@
+{
+	"id": "6582313c-abb5-5351-220b-b9a632b16121",
+	"name": "app个人中心（online）",
+	"description": "1/user/usercenter获取用户中心页面\n2/user/feedback添加意见反馈\n3/user/likeproductlist获取收藏单品列表\n4/user/updateuser更新用户信息\n5/common/uploadimg上传图片\n6/user/addaddress添加收货地址\n7/user/updateaddress更新收货地址\n8/user/deleteaddress删除收货地址\n9/user/addresslist获取收货地址列表\n10/user/setdefaultaddress设置默认收货地址\n11/common/getverifycode获取验证码\n12/user/common/checkverifycode检查验证码\n13/user/changemobile换绑手机\n14/user/resetpwd重置密码",
+	"totalrequests":"14",
+	"totalcases":"1",
+	"order": [
+		"2102d094-20ac-4b4a-9ec9-45145247d783",
+		"9be8aad6-16d8-0fd0-b1a9-90f70502dabe",
+		"6df42efb-f01a-5418-f45e-cb865ace9082",
+		"df3c61d5-84f0-da0a-90de-2f60c31b44a2",
+		"af3d3dfe-475a-55ba-c58d-882b7ad39e20",
+		"7c05e967-9660-1d76-1613-b64535b89735",
+		"ee7c79e9-59ba-8b76-4963-c0e867e01752",
+		"748170fd-dac3-70df-b601-997bc6ec2ba1",
+		"c7e3066d-c7d4-d6dc-b181-c68a3c2112cd",
+		"7f14509c-6dfe-cd51-7d10-555cf7f0409b",
+		"0ce7fb55-4012-b8e1-084e-186101f768d7",
+		"c6282375-70ca-bc8d-b19d-7355fd631244",
+		"849ce55d-2071-15a8-471d-826b5f8aed2d",
+		"6c0d3901-e228-2cde-399c-7560bf191308"
+	],
+	"folders": [],
+	"timestamp": 1453170893255,
+	"owner": "278877",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "2102d094-20ac-4b4a-9ec9-45145247d783",
+			"headers": "",
+			"url": "120.55.241.89/user/usercenter?token=e4d50c122158fa2f7a4038f0881bc7af",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [],
+			"dataMode": "params",
+			"name": "User/UserCenter",
+			"description": "获取用户中心页面",
+			"descriptionFormat": "html",
+			"time": 1453170946828,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "9be8aad6-16d8-0fd0-b1a9-90f70502dabe",
+			"headers": "",
+			"url": "120.55.241.89/user/feedback",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [
+				{
+					"key": "userId",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": "abcde",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contacter",
+					"value": "mark",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "User/Feedback",
+			"description": "添加用户反馈",
+			"descriptionFormat": "html",
+			"time": 1453170970375,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"cases":"1检查.data.res的值true",
+			"expectations":[
+				{
+       	 			"type": "include_words",
+        			"pos": ".data.res",
+        			"value": ["true"]
+    			}
+			]
+		},
+		{
+			"id": "6df42efb-f01a-5418-f45e-cb865ace9082",
+			"headers": "",
+			"url": "120.55.241.89/user/likeproductlist?token=49e2c52fc2e1051c58e11daace64ab5f",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [],
+			"dataMode": "params",
+			"name": "/User/LikeProductList",
+			"description": "获取收藏单品列表",
+			"descriptionFormat": "html",
+			"time": 1453170983435,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "df3c61d5-84f0-da0a-90de-2f60c31b44a2",
+			"headers": "",
+			"url": "120.55.241.89/user/updateuser",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [
+				{
+					"key": "token",
+					"value": "853b8fe05525566f11474aea44dd5593",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "birthday",
+					"value": "1999-02-08",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "avatar",
+					"value": "sssssss",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "CWAY",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "User/UpdateUser",
+			"description": "更新用户信息",
+			"descriptionFormat": "html",
+			"time": 1453170992967,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "af3d3dfe-475a-55ba-c58d-882b7ad39e20",
+			"headers": "",
+			"url": "120.55.241.89/common/uploadimg",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [
+				{
+					"key": "img",
+					"value": "u=1641402633,3997056317&fm=111&gp=0.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Common/UploadImg",
+			"description": "上传图片",
+			"descriptionFormat": "html",
+			"time": 1453171147580,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "7c05e967-9660-1d76-1613-b64535b89735",
+			"headers": "",
+			"url": "120.55.241.89/user/addaddress",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [
+				{
+					"key": "token",
+					"value": "083cf7b3f627fa8cbd0f2cf3dcb6faf0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "provinceId",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cityId",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "districtId",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contacter",
+					"value": "王小飘",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mobile",
+					"value": "15067243214",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "detailAddress",
+					"value": "张江镇",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "deliveryType",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "isDefault",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "province",
+					"value": "北京市",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "city",
+					"value": "北京市",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "district",
+					"value": "东城区",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "User/AddAddress",
+			"description": "添加收货地址",
+			"descriptionFormat": "html",
+			"time": 1453171162754,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ee7c79e9-59ba-8b76-4963-c0e867e01752",
+			"headers": "",
+			"url": "120.55.241.89/user/updateaddress",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [
+				{
+					"key": "token",
+					"value": "853b8fe05525566f11474aea44dd5593",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "provinceId",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cityId",
+					"value": "2",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "districtId",
+					"value": "3",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contacter",
+					"value": "王小飘",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mobile",
+					"value": "15067243214",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "detailAddress",
+					"value": "张江镇",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "deliveryType",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "isDefault",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "addressId",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "province",
+					"value": "aa",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "district",
+					"value": "nn",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "city",
+					"value": "dd",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "User/UpdateAddress",
+			"description": "更新收货地址",
+			"descriptionFormat": "html",
+			"time": 1453171195637,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "748170fd-dac3-70df-b601-997bc6ec2ba1",
+			"headers": "",
+			"url": "120.55.241.89/user/deleteaddress",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [
+				{
+					"key": "token",
+					"value": "853b8fe05525566f11474aea44dd5593",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "addressId",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "User/DeleteAddress",
+			"description": "删除收货地址",
+			"descriptionFormat": "html",
+			"time": 1453171209355,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c7e3066d-c7d4-d6dc-b181-c68a3c2112cd",
+			"headers": "",
+			"url": "120.55.241.89/user/addresslist?token=083cf7b3f627fa8cbd0f2cf3dcb6faf0",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [
+				{
+					"key": "token",
+					"value": "853b8fe05525566f11474aea44dd5593",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "addressId",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "User/AddressList",
+			"description": "获取收货地址列表",
+			"descriptionFormat": "html",
+			"time": 1453171222438,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "7f14509c-6dfe-cd51-7d10-555cf7f0409b",
+			"headers": "",
+			"url": "120.55.241.89/user/setdefaultaddress?token=853b8fe05525566f11474aea44dd5593&addressId=5",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [
+				{
+					"key": "token",
+					"value": "853b8fe05525566f11474aea44dd5593",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "addressId",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "User/SetDefaultAddress",
+			"description": "设置默认收货地址",
+			"descriptionFormat": "html",
+			"time": 1453171234512,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "0ce7fb55-4012-b8e1-084e-186101f768d7",
+			"headers": "",
+			"url": "120.55.241.89/common/getverifycode?mobile=15957143043&type=2",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [
+				{
+					"key": "token",
+					"value": "853b8fe05525566f11474aea44dd5593",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "addressId",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Common/GetVerifyCode",
+			"description": "获取验证码",
+			"descriptionFormat": "html",
+			"time": 1453171244081,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c6282375-70ca-bc8d-b19d-7355fd631244",
+			"headers": "",
+			"url": "120.55.241.89/common/checkverifycode?type=3&token=3194db5f351c4f40a8867a29032bb1a3&verifyCode=120475",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [
+				{
+					"key": "token",
+					"value": "853b8fe05525566f11474aea44dd5593",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "addressId",
+					"value": "6",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "5",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Common/CheckVerifyCode",
+			"description": "检查验证码",
+			"descriptionFormat": "html",
+			"time": 1453171256722,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "849ce55d-2071-15a8-471d-826b5f8aed2d",
+			"headers": "",
+			"url": "120.55.241.89/user/changemobile",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [
+				{
+					"key": "mobile",
+					"value": "17091915859",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "verifyCode",
+					"value": "080307",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "853b8fe05525566f11474aea44dd5593",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "originMobile",
+					"value": "18601652023",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "User/ChangeMobile",
+			"description": "换绑手机",
+			"descriptionFormat": "html",
+			"time": 1453171265832,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "6c0d3901-e228-2cde-399c-7560bf191308",
+			"headers": "",
+			"url": "120.55.241.89/user/resetpwd?mobile=18601652023&password=15868388608&verifyCode=11111",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "6582313c-abb5-5351-220b-b9a632b16121",
+			"data": [],
+			"dataMode": "params",
+			"name": "User/ResetPwd",
+			"description": "重置密码",
+			"descriptionFormat": "html",
+			"time": 1453171272960,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

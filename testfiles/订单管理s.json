@@ -1,0 +1,325 @@
+{
+	"id": "88ab8e1b-9733-1102-0475-ecf48a113a7e",
+	"name": "app订单管理（staging）",
+	"description": "1/order/getuserorders获取订单列表\n2/order/cancelorder取消订单\n3/order/waitcommentlist获取待评论订单\n4/order/userorderconfirm订单确认收货\n5/order/orderdetail获取订单详情\n6/ugc/usercomment评论订单\n7/order/userserviceorders获取售后订单",
+	"totalrequests":"7",
+	"totalcases":"4",
+	"order": [
+		"6a6aca21-fd74-d773-4b24-5cbee25037e3",
+		"d5d124ef-7385-0b4f-95ba-350822a1f5c5",
+		"1c9becb4-f536-6252-eeb2-57880e1b89af",
+		"84dc5f5a-b939-46b9-2c73-9edf4a0c44dd",
+		"e22c6aca-5d05-7387-a799-f98609af47d8",
+		"a222f69d-1210-66b9-be76-36f6161aaa4b",
+		"9dfb99d3-f620-ac11-d904-870e17b8a638"
+	],
+	"folders": [],
+	"timestamp": 1450684251147,
+	"owner": 0,
+	"remoteLink": "https://www.getpostman.com/collections/2482523e3337ab5e162d",
+	"public": false,
+	"requests": [
+		{
+			"id": "6a6aca21-fd74-d773-4b24-5cbee25037e3",
+			"headers": "",
+			"url": "10.0.0.193:9502/order/getuserorders?token=49e2c52fc2e1051c58e11daace64ab5f&type=0",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "token",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "orderId",
+					"value": "221",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "reason",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453258328673,
+			"name": "Order/GetUserOrders",
+			"description": "获取订单列表",
+			"collectionId": "88ab8e1b-9733-1102-0475-ecf48a113a7e",
+			"responses": [],
+			"cases":"1检查.data.list的参数名id",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data.list",
+        			"value": ["id"]
+    			}
+			]
+		},
+		{
+			"id": "d5d124ef-7385-0b4f-95ba-350822a1f5c5",
+			"headers": "",
+			"url": "10.0.0.193:9502/order/cancelorder",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "token",
+					"value": "fb930e094df88a426649fe4b26cda894",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "orderId",
+					"value": "29",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "reason",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453258407199,
+			"name": "Order/CancelOrder",
+			"description": "取消订单",
+			"collectionId": "88ab8e1b-9733-1102-0475-ecf48a113a7e",
+			"responses": []
+		},
+		{
+			"id": "1c9becb4-f536-6252-eeb2-57880e1b89af",
+			"headers": "",
+			"url": "10.0.0.193:9502/order/waitcommentlist?token=49e2c52fc2e1051c58e11daace64ab5f",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "token",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "orderId",
+					"value": "29",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453258344157,
+			"name": "Order/WaitCommentList",
+			"description": "获取待评论订单",
+			"collectionId": "88ab8e1b-9733-1102-0475-ecf48a113a7e",
+			"responses": [],
+			"cases":"1检查.data的参数名list",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["list"]
+    			}
+			]
+		},
+		{
+			"id": "84dc5f5a-b939-46b9-2c73-9edf4a0c44dd",
+			"headers": "",
+			"url": "10.0.0.193:9502/order/userorderconfirm?token=9ff80c2be0204eb72110bc485b155e81&orderId=360",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453258347568,
+			"name": "Order/UserOrderConfirm",
+			"description": "订单确认收货",
+			"collectionId": "88ab8e1b-9733-1102-0475-ecf48a113a7e",
+			"responses": []
+		},
+		{
+			"id": "e22c6aca-5d05-7387-a799-f98609af47d8",
+			"headers": "",
+			"url": "10.0.0.193:9502/order/orderdetail?orderId=2147483921&token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453258350365,
+			"name": "Order/OrderDetail",
+			"description": "获取订单详情",
+			"collectionId": "88ab8e1b-9733-1102-0475-ecf48a113a7e",
+			"responses": [],
+			"cases":"1检查.data的参数名id",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["id"]
+    			}
+			]
+		},
+		{
+			"id": "a222f69d-1210-66b9-be76-36f6161aaa4b",
+			"headers": "",
+			"url": "10.0.0.193:9502/ugc/usercomment",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "subOrderId",
+					"value": "46",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "score",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": "啊",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "deliveryScore",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "merchantScore",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "啊",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "ee6be12caa0b3368247e25b812dc6230",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453258353695,
+			"name": "Ugc/UserComment",
+			"description": "评论订单",
+			"collectionId": "88ab8e1b-9733-1102-0475-ecf48a113a7e",
+			"responses": []
+		},
+		{
+			"id": "9dfb99d3-f620-ac11-d904-870e17b8a638",
+			"headers": "",
+			"url": "10.0.0.193:9502/order/userserviceorders?token=49e2c52fc2e1051c58e11daace64ab5f",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "GET",
+			"data": [
+				{
+					"key": "subOrderId",
+					"value": "46",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "score",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": "啊",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "deliveryScore",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "merchantScore",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "啊",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1453258359200,
+			"name": "/Order/UserServiceOrders",
+			"description": "获取售后订单",
+			"collectionId": "88ab8e1b-9733-1102-0475-ecf48a113a7e",
+			"responses": [],
+			"cases":"1检查.data的参数名list",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["list"]
+    			}
+			]
+		}
+	]
+}
