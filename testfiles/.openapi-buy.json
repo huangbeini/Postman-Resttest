@@ -1,0 +1,658 @@
+{
+	"id": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+	"name": "openapi-buy",
+	"description": "1/user/getusercart获取购物车\n2/user/addskutocart更新购物车商品\n3/user/deletecartsku批量删除购物车商品\n4/user/clearcart清空购物车\n5/user/likeproductfromcart从购物车收藏商品\n6/order/orderinit初始化订单\n7/order/cancelorder取消订单\n8/order/submitorder提交订单\n9/order/orderpay申请订单支付\n10/order/orderpayconfirm客户端确认支付\n11/order/getuserorders获取订单列表\n12/order/waitcommentlist获取待评论订单\n13/order/userorderconfirm订单确认收货\n14/order/orderdetail获取订单详情\n15/ugc/usercomment评论订单\n16/order/userserviceorders获取售后订单",
+	"order": [
+		"7d906551-d159-661d-080e-661c8a3fbd29",
+		"a1b0aac4-24b3-e5e5-707e-0963397de44b",
+		"d7d4f9a1-848e-0db1-6c86-4958b1ab2da7",
+		"d3e9f898-9b9c-c96c-3f37-6b0c588c719b",
+		"1b1e0033-0f60-db4e-93be-abf923a3115a",
+		"4f61e7d8-c4a6-231c-f422-3c44c06286b0",
+		"f236f24f-fa94-6641-fade-9b85762a6cd5",
+		"08ef5247-c6f7-1ec4-06f5-03bd4b2008c7",
+		"9dec8ae3-eafc-067d-385c-6151064f6ab8",
+		"502cbe37-dbb0-b9f4-db48-1c18dea48a32",
+		"3b88d064-f358-d924-686a-15493818b02b",
+		"a41da31c-eb2e-cea3-9cbd-400fcb912fed",
+		"a1c42463-e10b-bebc-9ab1-12870a913567",
+		"d2202329-8b6d-c082-6a37-e2980a88f4c7",
+		"2f258cad-cd4e-b237-d61d-1f7df09ea08d",
+		"eddefa22-080c-01f9-f135-23504ebc467f"
+	],
+	"folders": [],
+	"timestamp": 1456299919995,
+	"owner": "278877",
+	"remoteLink": "",
+	"public": false,
+	"requests": [
+		{
+			"id": "08ef5247-c6f7-1ec4-06f5-03bd4b2008c7",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/order/submitorder",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "token",
+					"value": "fb930e094df88a426649fe4b26cda894",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "{\"deliveryProvince\":\"浙江省\",\"deliveryCity\":\"嘉兴市\",\"deliveryDistrict\":\"秀洲区\",\"deliveryDetailAddress\":\"中山路100号2号楼207\",\"consignee\":\"子画\",\"consigneePhone\":\"17091915856\"}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "invoice",
+					"value": "{\"type\":1,\"title\":\"\"}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "notes",
+					"value": "[\"亲,你好\",\"\",\"\"]",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "confirmOrderSerialId",
+					"value": "e13054c3079478e403013b3db03c9d13",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "addressId",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Order/SubmitOrder",
+			"description": "提交订单",
+			"descriptionFormat": "html",
+			"time": 1456301034571,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "1b1e0033-0f60-db4e-93be-abf923a3115a",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/user/likeproductfromcart",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "token",
+					"value": "fb930e094df88a426649fe4b26cda894",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "skusInfo",
+					"value": "[{\"skuId\":113, \"amount\":12}]",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "User/LikeProductFromCart",
+			"description": "购物车移入收藏",
+			"descriptionFormat": "html",
+			"time": 1456300982729,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "2f258cad-cd4e-b237-d61d-1f7df09ea08d",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/ugc/usercomment",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "subOrderId",
+					"value": "46",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "score",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": "啊",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "deliveryScore",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "merchantScore",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "啊",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "ee6be12caa0b3368247e25b812dc6230",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Ugc/UserComment",
+			"description": "用户评论订单",
+			"descriptionFormat": "html",
+			"time": 1456301345924,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "3b88d064-f358-d924-686a-15493818b02b",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/order/getuserorders?token=49e2c52fc2e1051c58e11daace64ab5f&type=0",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "token",
+					"value": "49e2c52fc2e1051c58e11daace64ab5f",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "orderIds",
+					"value": "42",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Order/GetUserOrders",
+			"description": "获取用户订单列表",
+			"descriptionFormat": "html",
+			"time": 1456301305277,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "4f61e7d8-c4a6-231c-f422-3c44c06286b0",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/order/orderinit",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "token",
+					"value": "49e2c52fc2e1051c58e11daace64ab5f",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "skusInfo",
+					"value": "[{\"skuId\":230,\"amount\":\"1\",\"price\":\"16000\"}]",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Order/OrderInit",
+			"description": "初始化订单",
+			"descriptionFormat": "html",
+			"time": 1456301021708,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "502cbe37-dbb0-b9f4-db48-1c18dea48a32",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/order/orderpayconfirm?paymentId=3&token=fb930e094df88a426649fe4b26cda894",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "token",
+					"value": "49e2c52fc2e1051c58e11daace64ab5f",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "orderIds",
+					"value": "42",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Order/OrderPayConfirm",
+			"description": "客户端确认支付完成",
+			"descriptionFormat": "html",
+			"time": 1456301049298,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "7d906551-d159-661d-080e-661c8a3fbd29",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/user/getusercart?userId=1&token=49e2c52fc2e1051c58e11daace64ab5f&pageNum=1",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "token",
+					"value": "fb930e094df88a426649fe4b26cda894",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "skuIds",
+					"value": "113",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "User/GetUserCart",
+			"description": "获取用户购物车",
+			"descriptionFormat": "html",
+			"time": 1456300941023,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "9dec8ae3-eafc-067d-385c-6151064f6ab8",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/order/orderpay",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "token",
+					"value": "49e2c52fc2e1051c58e11daace64ab5f",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "orderIds",
+					"value": "42",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Order/OrderPay",
+			"description": "申请订单支付",
+			"descriptionFormat": "html",
+			"time": 1456301041987,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a1b0aac4-24b3-e5e5-707e-0963397de44b",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/user/addskutocart",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "price",
+					"value": "1247",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "amount",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "skuId",
+					"value": "257",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "41923270d38bcd6c5e61e7a9d5098fa2",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "Sku/AddSkuToCart",
+			"description": "添加单品到购物车",
+			"descriptionFormat": "html",
+			"time": 1456300959329,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a1c42463-e10b-bebc-9ab1-12870a913567",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/order/userorderconfirm?token=9ff80c2be0204eb72110bc485b155e81&orderId=360",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [],
+			"dataMode": "params",
+			"name": "Order/UserOrderConfirm",
+			"description": "订单确认收货",
+			"descriptionFormat": "html",
+			"time": 1456301325742,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a41da31c-eb2e-cea3-9cbd-400fcb912fed",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/order/waitcommentlist?token=49e2c52fc2e1051c58e11daace64ab5f",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "token",
+					"value": "49e2c52fc2e1051c58e11daace64ab5f",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "orderIds",
+					"value": "42",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "type",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Order/WaitCommentList",
+			"description": "待评论列表",
+			"descriptionFormat": "html",
+			"time": 1456301314327,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "d2202329-8b6d-c082-6a37-e2980a88f4c7",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/order/orderdetail?orderId=&token=49e2c52fc2e1051c58e11daace64ab5f",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [],
+			"dataMode": "params",
+			"name": "Order/OrderDetail",
+			"description": "订单详情",
+			"descriptionFormat": "html",
+			"time": 1456301337167,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "d3e9f898-9b9c-c96c-3f37-6b0c588c719b",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/user/clearcart",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "token",
+					"value": "fb930e094df88a426649fe4b26cda894",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "User/ClearCart",
+			"description": "清空购物车",
+			"descriptionFormat": "html",
+			"time": 1456300976802,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "d7d4f9a1-848e-0db1-6c86-4958b1ab2da7",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/user/deletecartsku",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "token",
+					"value": "fb930e094df88a426649fe4b26cda894",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "skusInfo",
+					"value": "[{\"skuId\":113,\"amount\":10}]",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "User/DeleteCartSku",
+			"description": "清空购物车商品",
+			"descriptionFormat": "html",
+			"time": 1456300970976,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "eddefa22-080c-01f9-f135-23504ebc467f",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/order/userserviceorders?token=49e2c52fc2e1051c58e11daace64ab5f",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "subOrderId",
+					"value": "46",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "score",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": "啊",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "deliveryScore",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "merchantScore",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "userId",
+					"value": "啊",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "ee6be12caa0b3368247e25b812dc6230",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "/Order/UserServiceOrders",
+			"description": "获取售后订单",
+			"descriptionFormat": "html",
+			"time": 1456301353171,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "f236f24f-fa94-6641-fade-9b85762a6cd5",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/order/cancelorder",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
+			"data": [
+				{
+					"key": "token",
+					"value": "fb930e094df88a426649fe4b26cda894",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "orderId",
+					"value": "221",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "reason",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "Order/CancelOrder",
+			"description": "取消订单",
+			"descriptionFormat": "html",
+			"time": 1456301028430,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
