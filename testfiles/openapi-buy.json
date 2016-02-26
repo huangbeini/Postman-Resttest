@@ -2,6 +2,8 @@
 	"id": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
 	"name": "openapi-buy",
 	"description": "1/user/getusercart获取购物车\n2/user/addskutocart更新购物车商品\n3/user/deletecartsku批量删除购物车商品\n4/user/clearcart清空购物车\n5/user/likeproductfromcart从购物车收藏商品\n6/order/orderinit初始化订单\n7/order/cancelorder取消订单\n8/order/submitorder提交订单\n9/order/orderpay申请订单支付\n10/order/orderpayconfirm客户端确认支付\n11/order/getuserorders获取订单列表\n12/order/waitcommentlist获取待评论订单\n13/order/userorderconfirm订单确认收货\n14/order/orderdetail获取订单详情\n15/ugc/usercomment评论订单\n16/order/userserviceorders获取售后订单",
+	"totalrequests":"16",
+	"totalcases":"11",
 	"order": [
 		"7d906551-d159-661d-080e-661c8a3fbd29",
 		"a1b0aac4-24b3-e5e5-707e-0963397de44b",
@@ -94,7 +96,7 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "fb930e094df88a426649fe4b26cda894",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				},
@@ -107,14 +109,22 @@
 			],
 			"dataMode": "params",
 			"name": "User/LikeProductFromCart",
-			"description": "购物车移入收藏",
+			"description": "从购物车收藏商品",
 			"descriptionFormat": "html",
 			"time": 1456300982729,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data.res的值true",
+			"expectations":[
+				{
+       	 			"type": "include_words",
+        			"pos": ".data.res",
+        			"value": ["true"]
+    			}
+			]
 		},
 		{
 			"id": "2f258cad-cd4e-b237-d61d-1f7df09ea08d",
@@ -170,7 +180,7 @@
 			],
 			"dataMode": "params",
 			"name": "Ugc/UserComment",
-			"description": "用户评论订单",
+			"description": "评论订单",
 			"descriptionFormat": "html",
 			"time": 1456301345924,
 			"version": 2,
@@ -190,7 +200,7 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "49e2c52fc2e1051c58e11daace64ab5f",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				},
@@ -209,14 +219,22 @@
 			],
 			"dataMode": "params",
 			"name": "Order/GetUserOrders",
-			"description": "获取用户订单列表",
+			"description": "获取订单列表",
 			"descriptionFormat": "html",
 			"time": 1456301305277,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名list",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["list"]
+    			}
+			]
 		},
 		{
 			"id": "4f61e7d8-c4a6-231c-f422-3c44c06286b0",
@@ -229,13 +247,13 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "49e2c52fc2e1051c58e11daace64ab5f",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "skusInfo",
-					"value": "[{\"skuId\":230,\"amount\":\"1\",\"price\":\"16000\"}]",
+					"value": "[{\"skuId\":130,\"amount\":\"1\",\"price\":\"16000\"}]",
 					"type": "text",
 					"enabled": true
 				}
@@ -249,7 +267,15 @@
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名paymentway",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["paymentway"]
+    			}
+			]
 		},
 		{
 			"id": "502cbe37-dbb0-b9f4-db48-1c18dea48a32",
@@ -301,7 +327,7 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "fb930e094df88a426649fe4b26cda894",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				},
@@ -314,14 +340,22 @@
 			],
 			"dataMode": "params",
 			"name": "User/GetUserCart",
-			"description": "获取用户购物车",
+			"description": "获取购物车",
 			"descriptionFormat": "html",
 			"time": 1456300941023,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名list",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["list"]
+    			}
+			]
 		},
 		{
 			"id": "9dec8ae3-eafc-067d-385c-6151064f6ab8",
@@ -334,13 +368,13 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "49e2c52fc2e1051c58e11daace64ab5f",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "orderIds",
-					"value": "42",
+					"value": "2147483941",
 					"type": "text",
 					"enabled": true
 				},
@@ -360,7 +394,15 @@
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名paymentId",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["paymentId"]
+    			}
+			]
 		},
 		{
 			"id": "a1b0aac4-24b3-e5e5-707e-0963397de44b",
@@ -373,7 +415,7 @@
 			"data": [
 				{
 					"key": "price",
-					"value": "1247",
+					"value": "12947",
 					"type": "text",
 					"enabled": true
 				},
@@ -391,13 +433,13 @@
 				},
 				{
 					"key": "skuId",
-					"value": "257",
+					"value": "163",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "token",
-					"value": "41923270d38bcd6c5e61e7a9d5098fa2",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				}
@@ -411,7 +453,15 @@
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data.res的值true",
+			"expectations":[
+				{
+       	 			"type": "include_words",
+        			"pos": ".data.res",
+        			"value": ["true"]
+    			}
+			]
 		},
 		{
 			"id": "a1c42463-e10b-bebc-9ab1-12870a913567",
@@ -444,7 +494,7 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "49e2c52fc2e1051c58e11daace64ab5f",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				},
@@ -463,19 +513,27 @@
 			],
 			"dataMode": "params",
 			"name": "Order/WaitCommentList",
-			"description": "待评论列表",
+			"description": "获取待评论订单",
 			"descriptionFormat": "html",
 			"time": 1456301314327,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名list",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["list"]
+    			}
+			]
 		},
 		{
 			"id": "d2202329-8b6d-c082-6a37-e2980a88f4c7",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/order/orderdetail?orderId=&token=49e2c52fc2e1051c58e11daace64ab5f",
+			"url": "m.devapi.haoshiqi.net:9502/order/orderdetail?orderId=2147483941&token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -483,14 +541,22 @@
 			"data": [],
 			"dataMode": "params",
 			"name": "Order/OrderDetail",
-			"description": "订单详情",
+			"description": "获取订单详情",
 			"descriptionFormat": "html",
 			"time": 1456301337167,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名id",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["id"]
+    			}
+			]
 		},
 		{
 			"id": "d3e9f898-9b9c-c96c-3f37-6b0c588c719b",
@@ -503,7 +569,7 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "fb930e094df88a426649fe4b26cda894",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				}
@@ -517,7 +583,15 @@
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data.res的值true",
+			"expectations":[
+				{
+       	 			"type": "include_words",
+        			"pos": ".data.res",
+        			"value": ["true"]
+    			}
+			]
 		},
 		{
 			"id": "d7d4f9a1-848e-0db1-6c86-4958b1ab2da7",
@@ -530,7 +604,7 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "fb930e094df88a426649fe4b26cda894",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				},
@@ -543,67 +617,32 @@
 			],
 			"dataMode": "params",
 			"name": "User/DeleteCartSku",
-			"description": "清空购物车商品",
+			"description": "批量删除购物车商品",
 			"descriptionFormat": "html",
 			"time": 1456300970976,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data.res的值true",
+			"expectations":[
+				{
+       	 			"type": "include_words",
+        			"pos": ".data.res",
+        			"value": ["true"]
+    			}
+			]
 		},
 		{
 			"id": "eddefa22-080c-01f9-f135-23504ebc467f",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/order/userserviceorders?token=49e2c52fc2e1051c58e11daace64ab5f",
+			"url": "m.devapi.haoshiqi.net:9502/order/userserviceorders?token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
 			"collectionId": "80f84bf0-649b-b17e-d3d1-5aa277e2680b",
-			"data": [
-				{
-					"key": "subOrderId",
-					"value": "46",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "score",
-					"value": "1",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "content",
-					"value": "啊",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "deliveryScore",
-					"value": "1",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "merchantScore",
-					"value": "1",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "userId",
-					"value": "啊",
-					"type": "text",
-					"enabled": true
-				},
-				{
-					"key": "token",
-					"value": "ee6be12caa0b3368247e25b812dc6230",
-					"type": "text",
-					"enabled": true
-				}
-			],
+			"data": [],
 			"dataMode": "params",
 			"name": "/Order/UserServiceOrders",
 			"description": "获取售后订单",
@@ -613,7 +652,15 @@
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名list",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["list"]
+    			}
+			]
 		},
 		{
 			"id": "f236f24f-fa94-6641-fade-9b85762a6cd5",
