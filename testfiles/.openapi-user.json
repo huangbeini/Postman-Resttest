@@ -3,7 +3,7 @@
 	"name": "openapi-user",
 	"description": "1/user/register注册\n2/common/getverifycode获取验证码\n3/common/initconfig初始化配置\n4/user/login登录\n5/user/resetpwd重置密码\n6/user/usercenter获取用户中心页面\n7/user/feedback添加意见反馈\n8/user/likeproductlist获取收藏单品列表\n9/user/updateuser更新用户信息\n10/common/uploadimg上传图片\n11/user/addaddress添加收货地址\n12/user/updateaddress更新收货地址\n13/user/deleteaddress删除收货地址\n14/user/addresslist获取收货地址列表\n15/user/setdefaultaddress设置默认收货地址\n16/user/common/checkverifycode检查验证码\n17/user/changemobile换绑手机",
 	"totalrequests":"17",
-	"totalcases":"17",
+	"totalcases":"10",
 	"order": [
 		"300a814f-3729-0d31-203b-fefb3ab78ac8",
 		"924d1544-e378-9369-4bb2-5b0aef1f525d",
@@ -59,7 +59,7 @@
 		{
 			"id": "0cd2005c-530f-ca8b-2093-68e32c803bdb",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/usercenter?token=e4d50c122158fa2f7a4038f0881bc7af",
+			"url": "m.devapi.haoshiqi.net:9502/user/usercenter?token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -67,14 +67,22 @@
 			"data": [],
 			"dataMode": "params",
 			"name": "User/UserCenter",
-			"description": "用户中心",
+			"description": "获取用户中心页面",
 			"descriptionFormat": "html",
 			"time": 1456299256062,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名userinfo",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["userinfo"]
+    			}
+			]
 		},
 		{
 			"id": "120c139b-d391-93b2-5cb0-1c4249dcec4e",
@@ -87,7 +95,7 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "083cf7b3f627fa8cbd0f2cf3dcb6faf0",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				},
@@ -160,14 +168,22 @@
 			],
 			"dataMode": "urlencoded",
 			"name": "User/AddAddress",
-			"description": "添加用户地址",
+			"description": "添加收货地址",
 			"descriptionFormat": "html",
 			"time": 1456299327422,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名mobile",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["mobile"]
+    			}
+			]
 		},
 		{
 			"id": "1f007679-0685-4bbe-816f-0c88b60c849a",
@@ -180,7 +196,7 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "853b8fe05525566f11474aea44dd5593",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				},
@@ -199,14 +215,22 @@
 			],
 			"dataMode": "params",
 			"name": "User/AddressList",
-			"description": "获取用户收获地址列表",
+			"description": "获取收货地址列表",
 			"descriptionFormat": "html",
 			"time": 1456299348287,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data.list的参数名mobile",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data.list",
+        			"value": ["mobile"]
+    			}
+			]
 		},
 		{
 			"id": "1f7868b4-3e00-c0ce-3d92-95c7d6727a30",
@@ -258,7 +282,7 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "853b8fe05525566f11474aea44dd5593",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				},
@@ -290,7 +314,15 @@
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data.res的值true",
+			"expectations":[
+				{
+       	 			"type": "include_words",
+        			"pos": ".data.res",
+        			"value": ["true"]
+    			}
+			]
 		},
 		{
 			"id": "300a814f-3729-0d31-203b-fefb3ab78ac8",
@@ -332,7 +364,7 @@
 			"helperAttributes": {},
 			"time": 1456299143603,
 			"name": "User/Register",
-			"description": "用户注册",
+			"description": "注册",
 			"collectionId": "d709e94b-fb62-104a-80f5-6bc13668ee55",
 			"responses": []
 		},
@@ -347,7 +379,7 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "853b8fe05525566f11474aea44dd5593",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				},
@@ -401,7 +433,7 @@
 				},
 				{
 					"key": "addressId",
-					"value": "5",
+					"value": "10000182",
 					"type": "text",
 					"enabled": true
 				},
@@ -426,14 +458,22 @@
 			],
 			"dataMode": "urlencoded",
 			"name": "User/UpdateAddress",
-			"description": "更新用户地址",
+			"description": "更新收货地址",
 			"descriptionFormat": "html",
 			"time": 1456299334337,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名mobile",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["mobile"]
+    			}
+			]
 		},
 		{
 			"id": "4a4b886e-c7b4-2ce0-bf31-9966026d030a",
@@ -465,14 +505,22 @@
 			],
 			"dataMode": "urlencoded",
 			"name": "User/Login",
-			"description": "用户登录",
+			"description": "登录",
 			"descriptionFormat": "html",
 			"time": 1456299174760,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名username",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["username"]
+    			}
+			]
 		},
 		{
 			"id": "552ccd54-4986-7411-9988-485ef6a11316",
@@ -510,7 +558,7 @@
 			],
 			"dataMode": "params",
 			"name": "User/ChangeMobile",
-			"description": "更换绑定手机",
+			"description": "换绑手机",
 			"descriptionFormat": "html",
 			"time": 1456299380341,
 			"version": 2,
@@ -549,14 +597,22 @@
 			],
 			"dataMode": "urlencoded",
 			"name": "User/Feedback",
-			"description": "添加用户反馈",
+			"description": "添加意见反馈",
 			"descriptionFormat": "html",
 			"time": 1456299264608,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data.res的值true",
+			"expectations":[
+				{
+       	 			"type": "include_words",
+        			"pos": ".data.res",
+        			"value": ["true"]
+    			}
+			]
 		},
 		{
 			"id": "924d1544-e378-9369-4bb2-5b0aef1f525d",
@@ -589,13 +645,13 @@
 			"data": [
 				{
 					"key": "token",
-					"value": "853b8fe05525566f11474aea44dd5593",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 					"type": "text",
 					"enabled": true
 				},
 				{
 					"key": "addressId",
-					"value": "6",
+					"value": "10000182",
 					"type": "text",
 					"enabled": true
 				},
@@ -615,12 +671,20 @@
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data.res的值true",
+			"expectations":[
+				{
+       	 			"type": "include_words",
+        			"pos": ".data.res",
+        			"value": ["true"]
+    			}
+			]
 		},
 		{
 			"id": "be858138-0a7a-fff9-15df-a63e68a815ec",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/likeproductlist?token=49e2c52fc2e1051c58e11daace64ab5f",
+			"url": "m.devapi.haoshiqi.net:9502/user/likeproductlist?token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -628,14 +692,22 @@
 			"data": [],
 			"dataMode": "params",
 			"name": "/User/LikeProductList",
-			"description": "用户关注商品列表",
+			"description": "获取收藏单品列表",
 			"descriptionFormat": "html",
 			"time": 1456299273599,
 			"version": 2,
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名list",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["list"]
+    			}
+			]
 		},
 		{
 			"id": "cc41be27-96f3-82ba-3173-d5614348d3a4",
@@ -655,7 +727,15 @@
 			"responses": [],
 			"tests": "",
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"case":"检查.data的参数名userAgreement",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["userAgreement"]
+    			}
+			]
 		},
 		{
 			"id": "eec71f90-3191-fafd-1458-12dd8e8f60a2",
@@ -668,7 +748,7 @@
 			"data": [],
 			"dataMode": "params",
 			"name": "User/ResetPwd",
-			"description": "用户重置密码",
+			"description": "重置密码",
 			"descriptionFormat": "html",
 			"time": 1456299182581,
 			"version": 2,
