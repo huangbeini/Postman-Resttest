@@ -1,9 +1,9 @@
 {
 	"id": "d709e94b-fb62-104a-80f5-6bc13668ee55",
 	"name": "openapi-user",
-	"description": "1/user/register注册\n2/common/getverifycode获取验证码\n3/common/initconfig初始化配置\n4/user/login登录\n5/user/resetpwd重置密码\n6/user/usercenter获取用户中心页面\n7/user/feedback添加意见反馈\n8/user/likeproductlist获取收藏单品列表\n9/user/updateuser更新用户信息\n10/common/uploadimg上传图片\n11/user/addaddress添加收货地址\n12/user/updateaddress更新收货地址\n13/user/deleteaddress删除收货地址\n14/user/addresslist获取收货地址列表\n15/user/setdefaultaddress设置默认收货地址\n16/user/common/checkverifycode检查验证码\n17/user/changemobile换绑手机",
-	"totalrequests":"17",
-	"totalcases":"10",
+	"description": "1/user/register注册\n2/common/getverifycode获取验证码\n3/common/initconfig初始化配置\n4/user/login登录\n5/user/resetpwd重置密码\n6/user/usercenter获取用户中心页面\n7/user/feedback添加意见反馈\n8/user/likeproductlist获取收藏单品列表\n9/user/updateuser更新用户信息\n10/common/uploadimg上传图片\n11/user/addaddress添加收货地址\n12/user/updateaddress更新收货地址\n13/user/deleteaddress删除收货地址\n14/user/addresslist获取收货地址列表\n15/user/setdefaultaddress设置默认收货地址\n16/user/common/checkverifycode检查验证码\n17/user/changemobile换绑手机\n18/user/couponlist获取优惠券列表",
+	"totalrequests":"18",
+	"totalcases":"11",
 	"order": [
 		"300a814f-3729-0d31-203b-fefb3ab78ac8",
 		"924d1544-e378-9369-4bb2-5b0aef1f525d",
@@ -21,7 +21,8 @@
 		"1f007679-0685-4bbe-816f-0c88b60c849a",
 		"a21f458a-c9e6-b7f5-40d1-326ab7615f8c",
 		"efdef8b7-2a9f-0ebf-9bcc-bdb673100511",
-		"552ccd54-4986-7411-9988-485ef6a11316"
+		"552ccd54-4986-7411-9988-485ef6a11316",
+		"5c024f56-b444-230b-4252-f4e08a7e3982"
 	],
 	"folders": [],
 	"timestamp": 1456298477439,
@@ -795,6 +796,34 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {}
+		},
+		{
+			"id": "5c024f56-b444-230b-4252-f4e08a7e3982",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/user/couponlist?token=4b5f5a7dcfa8deab7e9a5dbc89d7440c&type=1",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "d709e94b-fb62-104a-80f5-6bc13668ee55",
+			"data": [],
+			"dataMode": "params",
+			"name": "/user/couponlist",
+			"description": "获取用户优惠券列表",
+			"descriptionFormat": "html",
+			"time": 1457404065076,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"case":"检查.data.activity的参数名shareZones",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data.activity",
+        			"value": ["shareZones"]
+    			}
+			]
 		}
 	]
 }
