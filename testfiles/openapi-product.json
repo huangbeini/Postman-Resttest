@@ -1,9 +1,9 @@
 {
 	"id": "70ae1be3-2c8a-e6f8-1ad0-a4eb265a440b",
 	"name": "openapi-product",
-	"description": "1/common/index获取首页\n2/product/recommendproducts获取推荐商品列表\n3/common/gpstogeo获取地理位置信息\n4/category/categorylist获取分类列表页\n5/product/itemssearch商品搜索\n6/ugc/ugclist获取单品评论列表\n7/product/productdetail获取商品图文详情\n8/product/iteminfo获取单品详情页信息\n9/user/likeproduct收藏商品\n10/user/unlikeproduct取消收藏商品\n11/merchant/merchantinfo获取商户信息\n12/merchant/productlist获取商户商品列表\n13/product/checkdelivery检测商品是否符合配送范围",
-	"totalrequests":"13",
-	"totalcases":"13",
+	"description": "1/common/index获取首页\n2/product/recommendproducts获取推荐商品列表\n3/common/gpstogeo获取地理位置信息\n4/category/categorylist获取分类列表页\n5/product/itemssearch商品搜索\n6/ugc/ugclist获取单品评论列表\n7/product/productdetail获取商品图文详情\n8/product/iteminfo获取单品详情页信息\n9/user/likeproduct收藏商品\n10/user/unlikeproduct取消收藏商品\n11/merchant/merchantinfo获取商户信息\n12/merchant/productlist获取商户商品列表\n13/product/checkdelivery检测商品是否符合配送范围\n14/product/topicskusinfo获取专题单品列表",
+	"totalrequests":"14",
+	"totalcases":"14",
 	"order": [
 		"5cb17c37-8322-c6c8-3e03-adfa2e7bcab7",
 		"e82ce90d-f175-fe63-a2f7-d61e61b9ce66",
@@ -17,7 +17,8 @@
 		"931ff4f8-3b09-1743-6108-e7d63ca56cae",
 		"2305782c-b48a-705b-5ac5-fd8f266ac34e",
 		"e9dcbe88-4ec6-317f-143e-b44285ed8b6d",
-		"cb31e24a-afb2-68bd-df8c-72f874105e81"
+		"cb31e24a-afb2-68bd-df8c-72f874105e81",
+		"8c1ea638-e29c-34c2-f5b4-d9dbc1b2226b"
 	],
 	"folders": [],
 	"timestamp": 1456299435673,
@@ -25,6 +26,34 @@
 	"remoteLink": "",
 	"public": false,
 	"requests": [
+		{
+			"id": "8c1ea638-e29c-34c2-f5b4-d9dbc1b2226b",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/product/topicskusinfo?topicCode=xxxx&skuIds=101",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"collectionId": "70ae1be3-2c8a-e6f8-1ad0-a4eb265a440b",
+			"data": [],
+			"dataMode": "params",
+			"name": "/product/topicskusinfo",
+			"description": "获取专题单品列表",
+			"descriptionFormat": "html",
+			"time": 1459154567401,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"case":"检查.data.list的参数名name",
+			"expectations":[
+				{
+					"type":"include_keys",
+					"pos":".data.list",						
+					"value":["name"]
+				}	
+			]
+		},
 		{
 			"id": "1aab4b20-0f16-941f-2378-36504022e98d",
 			"headers": "",
