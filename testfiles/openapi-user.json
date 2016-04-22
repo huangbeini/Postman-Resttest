@@ -1,9 +1,9 @@
 {
 	"id": "d709e94b-fb62-104a-80f5-6bc13668ee55",
 	"name": "openapi-user",
-	"description": "1/user/register注册\n2/common/getverifycode获取验证码\n3/common/initconfig初始化配置\n4/user/login登录\n5/user/resetpwd重置密码\n6/user/usercenter获取用户中心页面\n7/user/feedback添加意见反馈\n8/user/likeproductlist获取收藏单品列表\n9/user/updateuser更新用户信息\n10/common/uploadimg上传图片\n11/user/addaddress添加收货地址\n12/user/updateaddress更新收货地址\n13/user/deleteaddress删除收货地址\n14/user/addresslist获取收货地址列表\n15/user/setdefaultaddress设置默认收货地址\n16/user/common/checkverifycode检查验证码\n17/user/changemobile换绑手机\n18/user/couponlist获取优惠券列表\n19/reward/getrewardinfo获取活动信息\n20/common/verifyupgrade检查更新",
-	"totalrequests":"20",
-	"totalcases":"13",
+	"description": "1/user/register注册\n2/common/getverifycode获取验证码\n3/common/initconfig初始化配置\n4/user/login登录\n5/user/resetpwd重置密码\n6/user/usercenter获取用户中心页面\n7/user/feedback添加意见反馈\n8/user/likeproductlist获取收藏单品列表\n9/user/updateuser更新用户信息\n10/common/uploadimg上传图片\n11/user/addaddress添加收货地址\n12/user/updateaddress更新收货地址\n13/user/deleteaddress删除收货地址\n14/user/addresslist获取收货地址列表\n15/user/setdefaultaddress设置默认收货地址\n16/user/common/checkverifycode检查验证码\n17/user/changemobile换绑手机\n18/user/couponlist获取优惠券列表\n19/reward/getrewardinfo获取活动信息\n20/common/verifyupgrade检查更新\n21/user/bindpushclient绑定推送设备",
+	"totalrequests":"21",
+	"totalcases":"14",
 	"order": [
 		"300a814f-3729-0d31-203b-fefb3ab78ac8",
 		"924d1544-e378-9369-4bb2-5b0aef1f525d",
@@ -24,7 +24,8 @@
 		"552ccd54-4986-7411-9988-485ef6a11316",
 		"5c024f56-b444-230b-4252-f4e08a7e3982",
 		"f95181d0-ebf7-11d8-fbbb-51423b9da1d1",
-		"f2177a73-5204-7768-d540-425912e9e85f"
+		"f2177a73-5204-7768-d540-425912e9e85f",
+		"1cf7033d-1a2e-d4a8-5763-d90b5cc4afee"
 	],
 	"folders": [],
 	"timestamp": 1456298477439,
@@ -32,6 +33,53 @@
 	"remoteLink": "",
 	"public": false,
 	"requests": [
+		{
+			"id": "1cf7033d-1a2e-d4a8-5763-d90b5cc4afee",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/user/bindpushclient",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "d709e94b-fb62-104a-80f5-6bc13668ee55",
+			"data": [
+				{
+					"key": "userId",
+					"value": "10000183",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "clientId",
+					"value": "abcdefg",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "token",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "/user/bindpushclient",
+			"description": "绑定推送设备",
+			"descriptionFormat": "html",
+			"time": 1461313154420,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"case":"检查.data的参数名clientId",
+			"expectations":[
+				{
+       	 			"type": "include_keys",
+        			"pos": ".data",
+        			"value": ["clientId"]
+    			}
+			]
+		},
 		{
 			"id": "099360b0-ae42-06f5-2b37-9d8c060bc612",
 			"headers": "",
