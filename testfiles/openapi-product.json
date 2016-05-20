@@ -1,9 +1,9 @@
 {
 	"id": "70ae1be3-2c8a-e6f8-1ad0-a4eb265a440b",
 	"name": "openapi-product",
-	"description": "1/common/index获取首页\n2/product/recommendproducts获取推荐商品列表\n3/common/gpstogeo获取地理位置信息\n4/category/categorylist获取分类列表页\n5/product/itemssearch商品搜索\n6/ugc/ugclist获取单品评论列表\n7/product/productdetail获取商品图文详情\n8/product/iteminfo获取单品详情页信息\n9/user/likeproduct收藏商品\n10/user/unlikeproduct取消收藏商品\n11/merchant/merchantinfo获取商户信息\n12/merchant/productlist获取商户商品列表\n13/product/checkdelivery检测商品是否符合配送范围\n14/product/topicskusinfo获取专题单品列表\n15/reward/shareactivityinfo获取分享活动信息",
-	"totalrequests":"15",
-	"totalcases":"15",
+	"description": "1/common/index获取首页\n2/product/recommendproducts获取推荐商品列表\n3/common/gpstogeo获取地理位置信息\n4/category/categorylist获取分类列表页\n5/product/itemssearch商品搜索\n6/ugc/ugclist获取单品评论列表\n7/product/productdetail获取商品图文详情\n8/product/iteminfo获取单品详情页信息\n9/user/likeproduct收藏商品\n10/user/unlikeproduct取消收藏商品\n11/merchant/merchantinfo获取商户信息\n12/merchant/productlist获取商户商品列表\n13/product/checkdelivery检测商品是否符合配送范围\n14/product/topicskusinfo获取专题单品列表\n15/reward/shareactivityinfo获取分享活动信息\n16/coupon/couponredeem获取优惠券",
+	"totalrequests":"16",
+	"totalcases":"16",
 	"order": [
 		"5cb17c37-8322-c6c8-3e03-adfa2e7bcab7",
 		"e82ce90d-f175-fe63-a2f7-d61e61b9ce66",
@@ -19,7 +19,8 @@
 		"e9dcbe88-4ec6-317f-143e-b44285ed8b6d",
 		"cb31e24a-afb2-68bd-df8c-72f874105e81",
 		"8c1ea638-e29c-34c2-f5b4-d9dbc1b2226b",
-		"b561ac87-3de8-3927-49ca-0085ab731d8e"
+		"b561ac87-3de8-3927-49ca-0085ab731d8e",
+		"221b2aaf-3a94-af56-eb11-d78a99f7ed6e"
 	],
 	"folders": [],
 	"timestamp": 1456299435673,
@@ -27,6 +28,47 @@
 	"remoteLink": "",
 	"public": false,
 	"requests": [
+		{
+			"id": "221b2aaf-3a94-af56-eb11-d78a99f7ed6e",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/coupon/couponredeem",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"collectionId": "70ae1be3-2c8a-e6f8-1ad0-a4eb265a440b",
+			"data": [
+				{
+					"key": "token",
+					"value": "4b5f5a7dcfa8deab7e9a5dbc89d7440c",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "code",
+					"value": "1",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "/coupon/couponredeem",
+			"description": "领取优惠券",
+			"descriptionFormat": "html",
+			"time": 1463731820179,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"case":"检查.data.res的值true",
+			"expectations":[
+				{
+					"type":"include_words",
+					"pos":".data.res",						
+					"value":["true"]
+				}	
+			]
+		},
 		{
 			"id": "b561ac87-3de8-3927-49ca-0085ab731d8e",
 			"headers": "",
