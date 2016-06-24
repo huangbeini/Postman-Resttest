@@ -1,9 +1,9 @@
 {
 	"id": "d709e94b-fb62-104a-80f5-6bc13668ee55",
 	"name": "openapi-user",
-	"description": "1/user/register注册\n2/common/getverifycode获取验证码\n3/common/initconfig初始化配置\n4/user/login登录\n5/user/resetpwd重置密码\n6/user/usercenter获取用户中心页面\n7/user/feedback添加意见反馈\n8/user/likeproductlist获取收藏单品列表\n9/user/updateuser更新用户信息\n10/common/uploadimg上传图片\n11/user/addaddress添加收货地址\n12/user/updateaddress更新收货地址\n13/user/deleteaddress删除收货地址\n14/user/addresslist获取收货地址列表\n15/user/setdefaultaddress设置默认收货地址\n16/user/common/checkverifycode检查验证码\n17/user/changemobile换绑手机\n18/user/couponlist获取优惠券列表\n19/reward/getrewardinfo获取活动信息\n20/common/verifyupgrade检查更新\n21/user/bindpushclient绑定推送设备\n22/reward/coderedeem兑换活动码",
-	"totalrequests":"22",
-	"totalcases":"15",
+	"description": "1/user/register注册\n2/common/getverifycode获取验证码\n3/common/initconfig初始化配置\n4/user/login登录\n5/user/resetpwd重置密码\n6/user/usercenter获取用户中心页面\n7/user/feedback添加意见反馈\n8/user/likeproductlist获取收藏单品列表\n9/user/updateuser更新用户信息\n10/common/uploadimg上传图片\n11/user/addaddress添加收货地址\n12/user/updateaddress更新收货地址\n13/user/deleteaddress删除收货地址\n14/user/addresslist获取收货地址列表\n15/user/setdefaultaddress设置默认收货地址\n16/user/common/checkverifycode检查验证码\n17/user/changemobile换绑手机\n18/user/couponlist获取优惠券列表\n19/reward/getrewardinfo获取活动信息\n20/common/verifyupgrade检查更新\n21/user/bindpushclient绑定推送设备\n22/reward/coderedeem兑换活动码\n23/common/logstats上报信息",
+	"totalrequests":"23",
+	"totalcases":"16",
 	"order": [
 		"300a814f-3729-0d31-203b-fefb3ab78ac8",
 		"924d1544-e378-9369-4bb2-5b0aef1f525d",
@@ -26,7 +26,8 @@
 		"f95181d0-ebf7-11d8-fbbb-51423b9da1d1",
 		"f2177a73-5204-7768-d540-425912e9e85f",
 		"1cf7033d-1a2e-d4a8-5763-d90b5cc4afee",
-		"a4775d8d-edd5-8942-47ca-3a8f57323398"
+		"a4775d8d-edd5-8942-47ca-3a8f57323398",
+		"b23c3294-64a1-5118-83ff-87e10cfe2e86"
 	],
 	"folders": [],
 	"timestamp": 1456298477439,
@@ -34,6 +35,58 @@
 	"remoteLink": "",
 	"public": false,
 	"requests": [
+		{
+			"id": "b23c3294-64a1-5118-83ff-87e10cfe2e86",
+			"headers": "",
+			"url": "m.devapi.haoshiqi.net:9502/common/logstats",
+			"preRequestScript": "",
+			"pathVariables": {},
+			"method": "POST",
+			"data": [
+				{
+					"key": "osVersion",
+					"value": "1.5.0",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "event",
+					"value": "111222",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "mac",
+					"value": "abcde",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "ifa",
+					"value": "zxcvb",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": "",
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1466755875057,
+			"name": "/common/logstats",
+			"description": "上报信息",
+			"collectionId": "d709e94b-fb62-104a-80f5-6bc13668ee55",
+			"responses": [],
+			"case":"检查.data.res的值true",
+			"expectations":[
+				{
+       	 			"type": "include_words",
+        			"pos": ".data.res",
+        			"value": ["true"]
+    			}
+			]
+		},
 		{
 			"id": "a4775d8d-edd5-8942-47ca-3a8f57323398",
 			"headers": "",
@@ -45,7 +98,7 @@
 			"data": [
 				{
 					"key": "code",
-					"value": "7e5f33a2d916c1feafd3bc728b288f69",
+					"value": "fda901eb9fb6e3ffb77a331381333b11",
 					"type": "text",
 					"enabled": true
 				},
@@ -66,12 +119,12 @@
 			"tests": "",
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"case":"检查.data.res的值true",
+			"case":"检查.errmsg的值您已参加过该活动",
 			"expectations":[
 				{
        	 			"type": "include_words",
-        			"pos": ".data.res",
-        			"value": ["true"]
+        			"pos": ".errmsg",
+        			"value": ["您已参加过该活动"]
     			}
 			]
 		},
