@@ -1,1 +1,1 @@
-好食期 接口自动化测试 resttest框架 用例 openapi 
+好食期 postman+resttest+jenkins 自动化测试
