@@ -31,7 +31,7 @@
 		{
 			"id": "221b2aaf-3a94-af56-eb11-d78a99f7ed6e",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/coupon/couponredeem",
+			"url": "m.devapi.haoshiqi.net/coupon/couponredeem",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -72,7 +72,7 @@
 		{
 			"id": "b561ac87-3de8-3927-49ca-0085ab731d8e",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/reward/shareactivityinfo?activityId=1&token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
+			"url": "m.devapi.haoshiqi.net/reward/shareactivityinfo?activityId=1&token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -100,7 +100,7 @@
 		{
 			"id": "8c1ea638-e29c-34c2-f5b4-d9dbc1b2226b",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/product/topicskusinfo?topicCode=aeee3fe1672bc3745d47d00c4e8bc144&skuIds=101",
+			"url": "m.devapi.haoshiqi.net/product/topicskusinfo?topicCode=aeee3fe1672bc3745d47d00c4e8bc144&skuIds=101",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -128,7 +128,7 @@
 		{
 			"id": "1aab4b20-0f16-941f-2378-36504022e98d",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/product/itemssearch?q=巧克力",
+			"url": "m.devapi.haoshiqi.net/product/itemssearch?q=巧克力",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -181,7 +181,7 @@
 		{
 			"id": "2305782c-b48a-705b-5ac5-fd8f266ac34e",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/product/checkdelivery?skuId=109&zoneId=875",
+			"url": "m.devapi.haoshiqi.net/product/checkdelivery?skuId=109&zoneId=875",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -228,7 +228,7 @@
 		{
 			"id": "324f6b25-35bd-e2b0-9668-4f0daef7cde1",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/common/gpstogeo?aMapId=21",
+			"url": "m.devapi.haoshiqi.net/common/gpstogeo?aMapId=21",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -281,7 +281,7 @@
 		{
 			"id": "3535666c-990b-e0e7-f75c-af67cc4f9433",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/category/categorylist",
+			"url": "m.devapi.haoshiqi.net/category/categorylist",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -334,7 +334,7 @@
 		{
 			"id": "5cb17c37-8322-c6c8-3e03-adfa2e7bcab7",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/common/index",
+			"url": "m.devapi.haoshiqi.net/common/index",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -387,7 +387,7 @@
 		{
 			"id": "7f3414f1-088d-4059-fe98-07031b55fe74",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/product/productdetail?productId=114",
+			"url": "m.devapi.haoshiqi.net/product/productdetail?productId=114",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -440,7 +440,7 @@
 		{
 			"id": "931ff4f8-3b09-1743-6108-e7d63ca56cae",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/unlikeproduct",
+			"url": "m.devapi.haoshiqi.net/user/unlikeproduct",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -487,7 +487,7 @@
 		{
 			"id": "a2658f41-809b-cc03-9eab-279a4bd3518f",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/product/iteminfo?productId=113&skuId=113",
+			"url": "m.devapi.haoshiqi.net/product/iteminfo?productId=113&skuId=113",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -540,7 +540,7 @@
 		{
 			"id": "ab154924-7489-9cfd-c2c5-b9d693890dfe",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/ugc/ugclist?skuId=114",
+			"url": "m.devapi.haoshiqi.net/ugc/ugclist?skuId=114",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -593,7 +593,7 @@
 		{
 			"id": "cb31e24a-afb2-68bd-df8c-72f874105e81",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/merchant/productlist?merchantId=101",
+			"url": "m.devapi.haoshiqi.net/merchant/productlist?merchantId=101",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -640,7 +640,7 @@
 		{
 			"id": "e82ce90d-f175-fe63-a2f7-d61e61b9ce66",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/product/recommendproducts",
+			"url": "m.devapi.haoshiqi.net/product/recommendproducts",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -693,7 +693,7 @@
 		{
 			"id": "e9dcbe88-4ec6-317f-143e-b44285ed8b6d",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/merchant/merchantinfo?merchantId=101",
+			"url": "m.devapi.haoshiqi.net/merchant/merchantinfo?merchantId=101",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -740,7 +740,7 @@
 		{
 			"id": "f64b774b-07fc-771a-4b5e-3728b7ec9e94",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/likeproduct",
+			"url": "m.devapi.haoshiqi.net/user/likeproduct",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",

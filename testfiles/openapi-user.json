@@ -38,7 +38,7 @@
 		{
 			"id": "b23c3294-64a1-5118-83ff-87e10cfe2e86",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/common/logstats",
+			"url": "m.devapi.haoshiqi.net/common/logstats",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -90,7 +90,7 @@
 		{
 			"id": "a4775d8d-edd5-8942-47ca-3a8f57323398",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/reward/coderedeem",
+			"url": "m.devapi.haoshiqi.net/reward/coderedeem",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -131,7 +131,7 @@
 		{
 			"id": "1cf7033d-1a2e-d4a8-5763-d90b5cc4afee",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/bindpushclient",
+			"url": "m.devapi.haoshiqi.net/user/bindpushclient",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -178,7 +178,7 @@
 		{
 			"id": "099360b0-ae42-06f5-2b37-9d8c060bc612",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/common/uploadimg",
+			"url": "m.devapi.haoshiqi.net/common/uploadimg",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -205,7 +205,7 @@
 		{
 			"id": "0cd2005c-530f-ca8b-2093-68e32c803bdb",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/usercenter?token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
+			"url": "m.devapi.haoshiqi.net/user/usercenter?token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -233,7 +233,7 @@
 		{
 			"id": "120c139b-d391-93b2-5cb0-1c4249dcec4e",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/addaddress",
+			"url": "m.devapi.haoshiqi.net/user/addaddress",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -334,7 +334,7 @@
 		{
 			"id": "1f007679-0685-4bbe-816f-0c88b60c849a",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/addresslist?token=083cf7b3f627fa8cbd0f2cf3dcb6faf0",
+			"url": "m.devapi.haoshiqi.net/user/addresslist?token=083cf7b3f627fa8cbd0f2cf3dcb6faf0",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -381,7 +381,7 @@
 		{
 			"id": "1f7868b4-3e00-c0ce-3d92-95c7d6727a30",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/deleteaddress",
+			"url": "m.devapi.haoshiqi.net/user/deleteaddress",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -420,7 +420,7 @@
 		{
 			"id": "23818ae7-e306-56ca-c541-9fce34c889e7",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/updateuser",
+			"url": "m.devapi.haoshiqi.net/user/updateuser",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -473,7 +473,7 @@
 		{
 			"id": "300a814f-3729-0d31-203b-fefb3ab78ac8",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/register?",
+			"url": "m.devapi.haoshiqi.net/user/register?",
 			"preRequestScript": "",
 			"pathVariables": {},
 			"method": "POST",
@@ -517,7 +517,7 @@
 		{
 			"id": "3451d51f-1bb6-e6d6-bb93-0aab8b1583f5",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/updateaddress",
+			"url": "m.devapi.haoshiqi.net/user/updateaddress",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -624,7 +624,7 @@
 		{
 			"id": "4a4b886e-c7b4-2ce0-bf31-9966026d030a",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/login",
+			"url": "m.devapi.haoshiqi.net/user/login",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -671,7 +671,7 @@
 		{
 			"id": "552ccd54-4986-7411-9988-485ef6a11316",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/changemobile",
+			"url": "m.devapi.haoshiqi.net/user/changemobile",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -716,7 +716,7 @@
 		{
 			"id": "5ad2b456-19f0-f6bd-ba58-65b14b52e536",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/feedback",
+			"url": "m.devapi.haoshiqi.net/user/feedback",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -763,7 +763,7 @@
 		{
 			"id": "924d1544-e378-9369-4bb2-5b0aef1f525d",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/common/getverifycode?mobile=15957143043&type=2",
+			"url": "m.devapi.haoshiqi.net/common/getverifycode?mobile=15957143043&type=2",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -783,7 +783,7 @@
 		{
 			"id": "a21f458a-c9e6-b7f5-40d1-326ab7615f8c",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/setdefaultaddress?token=853b8fe05525566f11474aea44dd5593&addressId=5",
+			"url": "m.devapi.haoshiqi.net/user/setdefaultaddress?token=853b8fe05525566f11474aea44dd5593&addressId=5",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -830,7 +830,7 @@
 		{
 			"id": "be858138-0a7a-fff9-15df-a63e68a815ec",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/likeproductlist?token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
+			"url": "m.devapi.haoshiqi.net/user/likeproductlist?token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -858,7 +858,7 @@
 		{
 			"id": "cc41be27-96f3-82ba-3173-d5614348d3a4",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/common/initconfig",
+			"url": "m.devapi.haoshiqi.net/common/initconfig",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -886,7 +886,7 @@
 		{
 			"id": "eec71f90-3191-fafd-1458-12dd8e8f60a2",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/resetpwd?mobile=18601652023&password=15868388608&verifyCode=11111",
+			"url": "m.devapi.haoshiqi.net/user/resetpwd?mobile=18601652023&password=15868388608&verifyCode=11111",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -906,7 +906,7 @@
 		{
 			"id": "efdef8b7-2a9f-0ebf-9bcc-bdb673100511",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/common/checkverifycode?type=3&token=3194db5f351c4f40a8867a29032bb1a3&verifyCode=120475",
+			"url": "m.devapi.haoshiqi.net/common/checkverifycode?type=3&token=3194db5f351c4f40a8867a29032bb1a3&verifyCode=120475",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -945,7 +945,7 @@
 		{
 			"id": "5c024f56-b444-230b-4252-f4e08a7e3982",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/couponlist?token=4b5f5a7dcfa8deab7e9a5dbc89d7440c&type=1",
+			"url": "m.devapi.haoshiqi.net/user/couponlist?token=4b5f5a7dcfa8deab7e9a5dbc89d7440c&type=1",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -973,7 +973,7 @@
 		{
 			"id": "f2177a73-5204-7768-d540-425912e9e85f",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/common/verifyupgrade?v=1.0.0&terminal=android",
+			"url": "m.devapi.haoshiqi.net/common/verifyupgrade?v=1.0.0&terminal=android",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -1001,7 +1001,7 @@
 			{
 			"id": "f95181d0-ebf7-11d8-fbbb-51423b9da1d1",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/reward/getrewardinfo?rewardCode=newuserinv",
+			"url": "m.devapi.haoshiqi.net/reward/getrewardinfo?rewardCode=newuserinv",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",

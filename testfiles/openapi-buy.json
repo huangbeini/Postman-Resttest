@@ -31,7 +31,7 @@
 		{
 			"id": "08ef5247-c6f7-1ec4-06f5-03bd4b2008c7",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/order/submitorder",
+			"url": "m.devapi.haoshiqi.net/order/submitorder",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -88,7 +88,7 @@
 		{
 			"id": "1b1e0033-0f60-db4e-93be-abf923a3115a",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/likeproductfromcart",
+			"url": "m.devapi.haoshiqi.net/user/likeproductfromcart",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -129,7 +129,7 @@
 		{
 			"id": "2f258cad-cd4e-b237-d61d-1f7df09ea08d",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/ugc/usercomment",
+			"url": "m.devapi.haoshiqi.net/ugc/usercomment",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -192,7 +192,7 @@
 		{
 			"id": "3b88d064-f358-d924-686a-15493818b02b",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/order/getuserorders?token=49e2c52fc2e1051c58e11daace64ab5f&type=0",
+			"url": "m.devapi.haoshiqi.net/order/getuserorders?token=49e2c52fc2e1051c58e11daace64ab5f&type=0",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -239,7 +239,7 @@
 		{
 			"id": "4f61e7d8-c4a6-231c-f422-3c44c06286b0",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/order/orderinit",
+			"url": "m.devapi.haoshiqi.net/order/orderinit",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -280,7 +280,7 @@
 		{
 			"id": "502cbe37-dbb0-b9f4-db48-1c18dea48a32",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/order/orderpayconfirm?paymentId=3&token=fb930e094df88a426649fe4b26cda894",
+			"url": "m.devapi.haoshiqi.net/order/orderpayconfirm?paymentId=3&token=fb930e094df88a426649fe4b26cda894",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -319,7 +319,7 @@
 		{
 			"id": "7d906551-d159-661d-080e-661c8a3fbd29",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/getusercart?userId=1&token=49e2c52fc2e1051c58e11daace64ab5f&pageNum=1",
+			"url": "m.devapi.haoshiqi.net/user/getusercart?userId=1&token=49e2c52fc2e1051c58e11daace64ab5f&pageNum=1",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -360,7 +360,7 @@
 		{
 			"id": "9dec8ae3-eafc-067d-385c-6151064f6ab8",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/order/orderpay",
+			"url": "m.devapi.haoshiqi.net/order/orderpay",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -407,7 +407,7 @@
 		{
 			"id": "a1b0aac4-24b3-e5e5-707e-0963397de44b",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/addskutocart",
+			"url": "m.devapi.haoshiqi.net/user/addskutocart",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -466,7 +466,7 @@
 		{
 			"id": "a1c42463-e10b-bebc-9ab1-12870a913567",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/order/userorderconfirm?token=9ff80c2be0204eb72110bc485b155e81&orderId=360",
+			"url": "m.devapi.haoshiqi.net/order/userorderconfirm?token=9ff80c2be0204eb72110bc485b155e81&orderId=360",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -486,7 +486,7 @@
 		{
 			"id": "a41da31c-eb2e-cea3-9cbd-400fcb912fed",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/order/waitcommentlist?token=49e2c52fc2e1051c58e11daace64ab5f",
+			"url": "m.devapi.haoshiqi.net/order/waitcommentlist?token=49e2c52fc2e1051c58e11daace64ab5f",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -533,7 +533,7 @@
 		{
 			"id": "d2202329-8b6d-c082-6a37-e2980a88f4c7",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/order/orderdetail?orderId=2147483941&token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
+			"url": "m.devapi.haoshiqi.net/order/orderdetail?orderId=2147483941&token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -561,7 +561,7 @@
 		{
 			"id": "d3e9f898-9b9c-c96c-3f37-6b0c588c719b",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/clearcart",
+			"url": "m.devapi.haoshiqi.net/user/clearcart",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -596,7 +596,7 @@
 		{
 			"id": "d7d4f9a1-848e-0db1-6c86-4958b1ab2da7",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/user/deletecartsku",
+			"url": "m.devapi.haoshiqi.net/user/deletecartsku",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
@@ -637,7 +637,7 @@
 		{
 			"id": "eddefa22-080c-01f9-f135-23504ebc467f",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/order/userserviceorders?token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
+			"url": "m.devapi.haoshiqi.net/order/userserviceorders?token=4b5f5a7dcfa8deab7e9a5dbc89d7440c",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "GET",
@@ -665,7 +665,7 @@
 		{
 			"id": "f236f24f-fa94-6641-fade-9b85762a6cd5",
 			"headers": "",
-			"url": "m.devapi.haoshiqi.net:9502/order/cancelorder",
+			"url": "m.devapi.haoshiqi.net/order/cancelorder",
 			"pathVariables": {},
 			"preRequestScript": "",
 			"method": "POST",
